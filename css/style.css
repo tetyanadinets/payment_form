@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+    outline-style: none;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+	clear: both;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: #525859 url(../img/bgc.jpg) no-repeat;
+	background-size: cover;
+	font-weight: 400;
+}
+label{
+	color: #9EABAD;
+	font-size: 12px;
+	display: block;
+
+}
+input[type="text"] {
+	border: 2px solid #b4c1c4;
+	line-height: 40px;
+	padding: 0 8px;
+	font-size: 13px;
+	color: #727F82;
+	margin: 8px 0 27px;
+}
+input[type="text"]:focus{
+	border-color: #7fcddf;
+
+}
+select{
+	border: 2px solid #b4c1c4;
+	height: 40px;
+	display: inline-block;
+	padding: 0 8px;
+	font-size: 13px;
+	color: #727F82;
+	margin: 8px 0 27px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	background: url(../img/select.svg) center right 10px no-repeat;
+}
+
+select:focus{
+	border-color: #7fcddf;
+}
+a{
+	color: #9EABAD;
+	font-size: 12px;
+}
+a:hover{
+	color: #9EABAD;
+	text-decoration: none;
+}
+.pf-form{
+	width: 340px;
+	margin: 35px auto 30px;
+	background-color: #F4F5F5;
+	min-height: 200px;
+}
+.pf-form__header{
+	background-color: #efe5aa;
+	padding: 15px 25px;
+}
+.pf-form__header-title{
+	float: left;
+	width: 70%;
+	padding: 5px 0;
+}
+.pf-form__header-price{
+	float: left;
+	width: 30%;
+}
+.pf-form__header-title-name{
+	font-weight: 700;
+	color: #6e7f7b;
+	margin: 0;
+	font-size: 14px;
+}
+.pf-form__header-title-subname{
+	color: #a6a28d;
+	margin: 0;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.pf-form__header-total{
+	text-align: right;
+	font-size: 36px;
+	color: #637570;
+	margin: 0;
+	line-height: 1;
+	list-style: -0.05em;
+}
+fieldset{
+		padding: 45px 25px 30px;
+	margin: 0;
+	border: none;
+	font-size: 0;
+}
+.pf-form__data{
+
+	border-bottom: 1px solid #e3e7e8;
+}
+.pf-form__card{
+	width: 100%;
+}
+.ph-form__label-block{
+	display: block;
+}
+.pf-form__select-month{
+	width: 60%;
+}
+.pf-form__select-year{
+	width: 25%;
+	margin: 5%;
+}
+.pf-form__cvv{
+	width: 95px;
+}
+.pf-form__cvv-comment{
+	font-size: 12px;
+	padding-left: 8px;
+	color: #9EABAD;
+}
+.pf-button{
+	display: block;
+	text-align: center;
+	background-color: #26b167;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 20px;
+	border: none;
+	padding: 10px 0;
+	width: 100%;
+	cursor: pointer;
+}
+.pf-form__cansel{
+	margin: 20px auto 0;
+	display: block;
+	text-align: center;
+}

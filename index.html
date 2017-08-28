@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section class="pf-form">
+	<header class="pf-form__header cf">
+		<div class="pf-form__header-title">
+			<p class="pf-form__header-title-name"> Harold Finch</p>
+			<p class="pf-form__header-title-subname"> Your Total</p>
+		</div>
+		<div class="pf-form__header-price">
+			<p class="pf-form__header-total">$88</p>
+		</div>
+	</header>
+		<form action="/" method="post">
+			<fieldset class="pf-form__data">
+				<label>
+					Credit card number
+					<input class="pf-form__card" type="text" name="cardnumber" placeholder="Card number" required="required">
+				</label>
+				<label class="ph-form__label-block" for="month">
+					Expiration date
+				</label>
+					<select class="pf-form__select-month" name="month" id="month">
+						<option value="0" selected="" disabled="">Month</option>
+						<option value="1">January</option>
+						<option value="2">February</option>
+						<option value="3">March</option>
+					</select>
+					<select class="pf-form__select-year" name="year" id="year">
+						<option value="0" selected="" disabled="">Year</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+					</select>
+				<label for="cardcvv">
+					CVV
+				</label>
+					<input class="pf-form__cvv" type="text" name="cardcvv" id="cardcvv"required="required"><span class="pf-form__cvv-comment">3 or 4 digits <a href="#"> viev examples</a></span>
+			</fieldset>
+			<fieldset class="pf-form__b">
+			<button class="pf-button">Pay</button>
+			<a href="#" class="pf-form__cansel">
+				Cansel order
+			</a>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
